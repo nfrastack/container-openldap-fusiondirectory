@@ -73,7 +73,7 @@ RUN echo "" && \
                     PHP_RUN_DEPS \
                     && \
     clone_git_repo "${PHP_REPO_URL}" "${PHP_VERSION}" /usr/src/php && \
-    curl -ssL https://gitlab.alpinelinux.org/alpine/aports/-/raw/3.19-stable/community/php81/fix-lfs64.patch?ref_type=heads -o /usr/src/php/fix-lfs64.patch && \
+    curl -ssL https://raw.githubusercontent.com/alpinelinux/aports/3.19-stable/community/php81/fix-lfs64.patch -o /usr/src/php/fix-lfs64.patch && \
     patch -d /usr/src/php -p1 < /usr/src/php/fix-lfs64.patch && \
     ./buildconf --force && \
     ./configure \

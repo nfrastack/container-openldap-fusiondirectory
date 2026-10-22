@@ -1,3 +1,9 @@
+## 2.6-1.5-8.1.2 2026-10-21 <code at nfrastack dot com>
+
+   ### Added
+      - Pin to tiredofit/openldap:2.6-8.1.2
+
+
 ## 2.6-1.5-8.1.1 2026-09-09 <code at nfrastack dot com>
 
    ### Added
